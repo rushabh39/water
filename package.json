@@ -1,0 +1,22 @@
+{
+  "name": "water-with-a-reason",
+  "version": "1.0.0",
+  "description": "WATER, WITH A REASON. - Three-Tier Bottled Water Portfolio (Millionaire, Billionaire, Trillionaire)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "water",
+    "hospitality",
+    "luxury",
+    "three-tier",
+    "millionaire",
+    "billionaire",
+    "trillionaire",
+    "interactive"
+  ],
+  "author": "WATER, WITH A REASON.",
+  "license": "ISC"
+}

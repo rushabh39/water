@@ -1,0 +1,331 @@
+/* ==========================================================================
+   WATER, WITH A REASON. — Mobile-Friendly Enhancements & Responsiveness
+   ========================================================================== */
+
+/* Base Mobile Safety & Smooth Scrolling */
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ==========================================================================
+   Mobile Breakpoint (< 768px)
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+    
+    /* 1. Loader screen on mobile */
+    .loader {
+        padding: 0 16px;
+    }
+    
+    .loader__inner {
+        width: 100% !important;
+        max-width: 340px !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    .loader__svg {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 320px !important;
+        transform: scale(1) !important;
+        margin: 0 auto !important;
+    }
+    
+    .loader__percentage {
+        font-size: 18px !important;
+        margin-top: 16px !important;
+        transform: none !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        color: #00aeff !important;
+    }
+    
+    .loader__text {
+        font-size: 13px !important;
+        letter-spacing: 2px !important;
+        margin-top: 8px !important;
+        transform: none !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: auto !important;
+        color: rgba(255, 255, 255, 0.85) !important;
+    }
+
+    /* 2. Skip Intro Button */
+    .skip-intro {
+        bottom: 24px !important;
+        right: 20px !important;
+        padding: 10px 18px !important;
+        font-size: 13px !important;
+        border-radius: 20px !important;
+        backdrop-filter: blur(6px) !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        z-index: 400 !important;
+    }
+
+    /* 3. Sound Control */
+    .sound-control {
+        top: 20px !important;
+        right: 75px !important;
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    /* 4. Hamburger & Header */
+    .hamburger {
+        top: 16px !important;
+        right: 16px !important;
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    /* 5. Typography on mobile */
+    .about-text__heading,
+    .qanelas-28-bold {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 14px !important;
+        text-align: left !important;
+    }
+
+    .about-text__right p,
+    .cream-16-normal p {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 14px !important;
+        color: #e2ecf5 !important;
+    }
+
+    .about-text__inner {
+        padding: 0 20px !important;
+    }
+
+    /* 6. Product Sliders (< 768px) */
+    .negazirana__slider,
+    .vitaminska__slider {
+        touch-action: pan-y pinch-zoom !important;
+        position: relative !important;
+        padding: 20px 0 !important;
+    }
+
+    /* Enlarge touch targets for slider left/right buttons */
+    .js-slider-left,
+    .js-slider-right {
+        min-width: 48px !important;
+        min-height: 48px !important;
+        width: 48px !important;
+        height: 48px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: rgba(14, 28, 48, 0.65) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        border-radius: 50% !important;
+        backdrop-filter: blur(8px) !important;
+        cursor: pointer !important;
+        z-index: 35 !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .js-slider-left svg,
+    .js-slider-right svg {
+        width: 14px !important;
+        height: 24px !important;
+    }
+
+    .negazirana__slider-slide img.negazirana__bottle,
+    .vitaminska__slider-slide img.vitaminska__bottle {
+        max-height: 44vh !important;
+        height: auto !important;
+        max-width: 180px !important;
+        object-fit: contain !important;
+        margin: 0 auto !important;
+    }
+
+    .negazirana__slider-title,
+    .vitaminska__slider-title {
+        font-size: 16px !important;
+        line-height: 1.35 !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px !important;
+        margin-top: 14px !important;
+        text-align: center !important;
+        color: #ffffff !important;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+    }
+
+    /* 7. Interactive Hotspots on mobile */
+    .hotspot__indicator {
+        width: 44px !important;
+        height: 44px !important;
+    }
+
+    .hotspot__content {
+        width: calc(100vw - 40px) !important;
+        max-width: 320px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        box-sizing: border-box !important;
+        font-size: 13.5px !important;
+        line-height: 1.5 !important;
+        padding: 16px 18px !important;
+        border-radius: 12px !important;
+        background: rgba(10, 22, 40, 0.95) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6) !important;
+        backdrop-filter: blur(12px) !important;
+        color: #f0f6fc !important;
+    }
+
+    /* 8. Feature Bottle in Hollow Trunk (imuno section) */
+    .imuno-title {
+        font-size: 18px !important;
+        letter-spacing: 1px !important;
+        text-align: center !important;
+    }
+
+    /* 9. B2B Footer & Form on Mobile */
+    .footer {
+        padding: 40px 16px 80px 16px !important;
+    }
+
+    .footer__inner {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .footer__form {
+        width: 100% !important;
+        margin-top: 24px !important;
+    }
+
+    .footer__form-top {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .footer__form-top p {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .footer__form input[type="text"],
+    .footer__form input[type="email"],
+    .footer__form textarea {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        min-height: 48px !important;
+        font-size: 16px !important; /* Critical: prevents iOS auto-zoom */
+        padding: 12px 16px !important;
+        border-radius: 8px !important;
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        color: #ffffff !important;
+    }
+
+    .footer__form textarea {
+        min-height: 110px !important;
+        resize: vertical !important;
+    }
+
+    .footer__form input[type="submit"] {
+        width: 100% !important;
+        min-height: 52px !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        letter-spacing: 1px !important;
+        border-radius: 8px !important;
+        background: #0078b9 !important;
+        color: #ffffff !important;
+        cursor: pointer !important;
+        margin-top: 14px !important;
+        box-shadow: 0 4px 16px rgba(0, 120, 185, 0.4) !important;
+    }
+
+    .footer__bottom-top {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 16px !important;
+        margin-top: 30px !important;
+    }
+
+    .footer__bottom-list {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px 20px !important;
+        padding: 0 !important;
+    }
+
+    .footer__bottom-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 8px !important;
+        margin-top: 20px !important;
+    }
+
+    .footer__bottom-copy,
+    .footer__bottom-right {
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+        opacity: 0.8 !important;
+        text-align: center !important;
+    }
+
+    /* 10. Sticky Mobile B2B Action Pill */
+    .mobile-b2b-action-bar {
+        position: fixed !important;
+        bottom: 16px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        z-index: 250 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+        background: rgba(14, 28, 48, 0.92) !important;
+        backdrop-filter: blur(14px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        padding: 8px 18px !important;
+        border-radius: 30px !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .mobile-b2b-action-bar a {
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        color: #ffffff !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        text-decoration: none !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    .mobile-b2b-action-bar .divider {
+        width: 1px;
+        height: 18px;
+        background: rgba(255, 255, 255, 0.25);
+    }
+}
+
+/* Hide mobile action bar on desktop */
+@media screen and (min-width: 768px) {
+    .mobile-b2b-action-bar {
+        display: none !important;
+    }
+}
